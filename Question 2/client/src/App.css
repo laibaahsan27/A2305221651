@@ -6,7 +6,138 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #77ab59 3px solid;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+}
+
+nav a {
+  margin-right: 15px;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.filter-item {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.filter-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filter-item input,
+.filter-item select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.apply-filters {
+  padding: 10px 20px;
+  background-color: #77ab59;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
   padding: 20px;
+  margin: 10px;
+  flex: 1 1 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.view-details {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #77ab59;
+  color: white;
+  text-decoration: none;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  background-color: #77ab59;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-image {
+  flex: 1 1 300px;
+}
+
+.product-info {
+  flex: 2 1 300px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: #77ab59;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
 }
